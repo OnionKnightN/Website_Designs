@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Globo Gym</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div><a href="index.html"><img src="img/GloboGymLogo.png" alt= "home logo" id ="logo"></a></div>
+      <label id= "burger" for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
+      <nav class="nav_main">
+        <ul class="nav_list">
+          <li><a href="membership.html">MEMBERSHIP</a></li>
+          <li><a href="classes.html">CLASSES</a></li>
+          <li><a href="about_us.html">ABOUT US</a></li>
+          <li><a href="testimonial.html">TESTIMONIAL</a></li>
+          <li><a href="careers.html">CAREERS</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+          <li class = "special"><a href="join_now.html">JOIN NOW</a></li>
+          <li class = "special"><a href="login.html">LOG IN</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class ="form_container">
+      <form action="#" method="POST" class ="form">
+  			<h1>GYM MEMBERSHIP</h1>
+  			<label>MEMBERSHIP TYPE*</label>
+          <select name ="member" class ="form_control">
+            <option value="month_stu">Monthly Student</option>
+            <option value="year_stu">Yearly Student</option>
+            <option value="month_adt">Monthly Adult</option>
+            <option value="year_adt">Yearly Adult</option>
+            <option value="month_premium">Monthly Premium</option>
+            <option value="year_premium">Yearly Premium</option>
+          </select>
+          <label>CLASS*</label><br>
+            <div class = "form_class_container" >
+              <input type="checkbox" name="bootcamp" value="bootcamp" class="form_class"><label>BOOTCAMP</label>
+              <input type="checkbox" name="strength/condition" value="strength/condition" class="form_class"><label>STRENGTH/CONDITION</label>
+              <input type="checkbox" name="battle_rope" value="battle_rope" class="form_class"><label>BATTLE ROPES</label>
+              <input type="checkbox" name="boxing" value="boxing" class="form_class"><label>BOXING</label>
+              <input type="checkbox" name="globocycle" value="globocycle" class="form_class"><label>GLOBO CYCLE</label>
+              <input type="checkbox" name="dragonboat" value="dragonboat" class="form_class"><label>DRAGON BOAT</label>
+              <input type="checkbox" name="trx" value="trx" class="form_class"><label>TRX</label>
+              <input type="checkbox" name="kickboxing" value="kickboxing" class="form_class"><label>KICKBOXING</label>
+              <input type="checkbox" name="globoball" value="globoball" class="form_class"><label>GLOBOBALL</label>
+            </div>
+        <label>TITLE*</label>
+          <select name ="title" class ="form_control">
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+            <option value="ms">Ms</option>
+            <option value="mx">Mx</option>
+            <option value="dr">Dr</option>
+          </select>
+  			<label>FIRSTNAME*</label><input type="text" name="firstName" id="firstName" class ="form_control" size="20" maxlength="30">
+  			<label>LASTNAME*</label><input type="text" name="lastName" id="lastName" class ="form_control" size="20" maxlength="30">
+        <label>GENDER*</label>
+  				<select name ="gender" class ="form_control">
+  					<option value="male">Male</option>
+  					<option value="female">Female</option>
+  					<option value="unknown">Unknown</option>
+  				</select>
+        <label>DATE OF BIRTH(YYYY-MM-DD)*</label><input type="text" name="dob" id="dob" class ="form_control">
+        <label>EMAIL ADDRESS*</label><input type="email" name="email" class ="form_control"/>
+        <label>COMFIRM EMAIL ADDRESS*</label><input type="email" name="email" class ="form_control"/>
+        <label>PASSWORD</label><input type="password" class ="form_control" name="psw" required>
+        <label>COMFIRM PASSWORD*</label><input type="password" class ="form_control" name="psw" required >
+        <label>ADDRESS</label> <input type="text" name="address" size="20" maxlength="200" class ="form_control">
+        <label>POST CODE</label>
+          <select name ="postCode" class ="form_control">
+            <option value="D1">Dublin 1</option>
+            <option value="D2">Dublin 2</option>
+            <option value="D3">Dublin 3</option>
+            <option value="D4">Dublin 4</option>
+            <option value="D5">Dublin 5</option>
+            <option value="D6">Dublin 6</option>
+            <option value="D7">Dublin 7</option>
+            <option value="D8">Dublin 8</option>
+            <option value="D9">Dublin 9</option>
+            <option value="D10">Dublin 10</option>
+            <option value="D11">Dublin 11</option>
+            <option value="D12">Dublin 12</option>
+            <option value="D13">Dublin 13</option>
+            <option value="D14">Dublin 14</option>
+            <option value="D15">Dublin 15</option>
+            <option value="D16">Dublin 16</option>
+            <option value="D17">Dublin 17</option>
+            <option value="D18">Dublin 18</option>
+            <option value="D19">Dublin 19</option>
+            <option value="D20">Dublin 20</option>
+            <option value="D21">Dublin 21</option>
+            <option value="D22">Dublin 22</option>
+            <option value="D23">Dublin 23</option>
+            <option value="D24">Dublin 24</option>
+          </select>
+        <label>PHONE NUMBER</label><input type="tel" name="phone" placeholder="eg. 0861238200" class ="form_control"/>
+        <div class="border"></div>
+        <label>Do you have any health issues?</label>
+        <input type="radio" name="heath" value="no" class="form_radio"><label class="form_radio">No</label>
+        <input type="radio" name="heath" value="yes" class="form_radio"><label class="form_radio">Yes</label>
+        <div class="border"></div>
+        <p><label>I allow Globo Gym to send me marketing offers from time to time.</label><input type="checkbox" name="market" value="yes" class="form_checkbox"></p>
+        <p><label>I have read and agreed to the Globo Gym's terms and condition.</label><input type="checkbox" name="terms" value="yes" class="form_checkbox"></p>
+        <div class="border"></div>
+        <input type="submit" name="submit" value="SUBMIT" class ="formBtn">
+      </form>
+    </section>
+    <footer>
+      <div class="footer_detail">
+        <h3>GLOBO GYM LIMITED</h3>
+        <p>10 Harring Angel Street,Dublin 8<br>Mobile No: 014967876<br>
+        Email: globogym@gmail.com<br><br>Registered in Ireland<br>
+        Company No . IE555527<br>VAT No. IE1123544OH</p>
+      </div>
+      <div class="footer_list">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">CLASSES</a></li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">PRIVACY POLICY</a></li>
+          <li><a href="#">TERMS & CONDITIONS</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <h3>SOCIAL MEDIA</h3>
+        <a href="#" target="_blank"><img src="img/facebook.png" alt= "facebook logo" class ="social_logo"></a>
+        <a href="#" target="_blank"><img src="img/instagram.png" alt= "instagram logo" class ="social_logo"></a>
+        <a href="#" target="_blank"><img src="img/youtube.png" alt= "youtube logo" class ="social_logo"></a>
+        <a href="#" target="_blank"><img src="img/snapchat.png" alt= "snapcaht logo" class ="social_logo"></a>
+      </div>
+    </footer>
+  </body>
+</html>
