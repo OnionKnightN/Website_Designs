@@ -1,0 +1,449 @@
+	body {
+		font-family: Helvetica;
+		width: 1350px;
+		margin:0 auto;
+	}
+	/*Navigation Bar Start*/
+	header {
+		background: #FFE02B;
+		padding: 1em 0;
+		height: 30px;
+	}
+	label {
+			display: none;
+	}
+	/*not displaying toggle*/
+	#toggle{
+	    display: none;
+	}
+	/*Navigation Bar End*/
+	.hometext{
+		color: #808080;
+	}
+@media only screen and (max-width: 520px) {
+	body {
+		width: 520px;
+	}
+	header {
+		width: 530px;
+	}
+	/*Navigation Bar Start*/
+  label {
+      float:right;
+			margin: 15px 25px;
+      font-size: 35px;
+      width: 26px;
+      line-height: 0px;
+      display: block;
+      cursor: pointer;
+  }
+  /*Taking out bullet points off list*/
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  /*presents and displaying headings when hovered*/
+  ul li:hover {
+    display: block;
+    background-color: #FFE02B;
+  }
+  /*position and design of drop down navigation menu*/
+  .nav_main {
+      background-color: #FFE02B;
+      margin: 45px 0px;
+      text-align: center;
+      width: 530px;
+      display: none;
+  }
+  /*styling of links on drop down navigation menu*/
+  .nav_main a {
+      display: block;
+      color: #000000;
+      border-top: 1px solid #EAEAEB;
+      margin: 0 5px;
+      line-height: 50px;
+      font-size: 15px;
+			font-weight: bold;
+      list-style: none;
+      text-decoration: none;
+  }
+	/*color change of navigation text when hovered*/
+	.nav_main a:hover {
+			color:#FFFFFF;
+	}
+  /*position and function of toggle when checked*/
+  #toggle:checked + .nav_main {
+      position: absolute;
+      display: block;
+  }
+  /*Navigation Bar End*/
+	/*Homepage Start*/
+		#logo{
+			margin: 50px 100px;
+			width: 325px;
+		}
+		#line {
+			border-left: 450px
+			solid #000000;
+	  	height: 15px;
+			margin-left: 35px;
+		}
+		#welcome{
+      width: 500px;
+			text-align: center;
+			margin-left: 10px;
+			margin-top: 50px;
+			font-size: 32px;
+		}
+	/*Homepage End*/
+	/*About Us Start*/
+		#hline{
+			margin-left:0px;
+			width:520px;
+		}
+		#aboutUs{
+			width: 450px;
+			margin: 30px 40px;
+		}
+		#aboutUs h1{
+			font-size: 24px;
+		}
+		#aboutUs p{
+			font-size: 16px;
+		}
+		#hline2{
+			margin-top:25px;
+			margin-left:0px;
+			width:520px;
+		}
+		/*image silder start*/
+		.slider{
+			width:300px;
+			margin:30px;
+		}
+		.slider-inner{
+			width:465px;
+			height:300px;
+			padding:3px;
+		}
+		.slider-inner img{
+			display:none;
+			width:450px;
+			height:300px;
+		}
+		.slider-inner img.active{
+			display:inline-block;
+		}
+		.prev,.next{
+			float:left;
+			margin-top:130px;
+			cursor: pointer;
+		}
+		.prev{
+			position:relative;
+			margin-right:-45px;
+		}
+		.next{
+			position:relative;
+			margin:-175px 412px;
+		}
+		/*image silder end*/
+	/*About Us End*/
+	/*Classes Start*/
+		#class{
+			margin:20px;
+		}
+		#classes{
+			margin-left: 20px;
+			margin-top: 25px;
+		}
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			width: 450px;
+			margin: 10px 30px 20px 20px;
+		}
+		.container {
+			padding: 5px 16px;
+			background-color: #FFE02B;
+		}
+		#hline3{
+			margin-top: 50px;
+			margin-left:-15px;
+			width:510px;
+		}
+	/*Classes End*/
+  /*Timetable Start*/
+		#timetabler{
+			margin-left: 20px;
+		}
+    #time{
+      margin-left: 20px;
+      margin-top: 25px;
+    }
+    #timetable{
+      display:none;
+    }
+    #timetable2{
+      margin-left: 20px;
+    }
+		table{
+			font-family: Helvetica;
+			width: 450px;
+			table-layout: fixed;
+			text-align: center;
+			margin:10px 200px;
+			margin-bottom: 50px;
+			color: #000000;
+		}
+		table th,td{
+			border: 1px dotted #000000;
+			border-collapse: collapse;
+			padding: 20px;
+			font-size: 14px;
+		}
+		th{
+			background-color: #FFE02B;
+		}
+		#hline4{
+			margin-top:10px;
+			margin-left:-22px;
+			width:520px;
+		}
+  /*Timetable End*/
+	/*Contact Start*/
+		#contact{
+			margin-left:40px;
+		}
+	/*Contact End*/
+	/*Map Start*/
+		#map{
+			margin-left:20px;
+			margin-top:10px;
+			margin-bottom:25px;
+			height:450px;
+			width:480px;
+		}
+	/*Map End*/
+	/*Footer Start*/
+	footer{
+		background-color: #292c2f;
+	  box-sizing: border-box;
+	  width: 530px;
+	  padding: 35px 50px;
+	}
+	.detail{
+		text-align: center;
+		font-size: 16px;
+		color:#808080;
+	}
+	.social{
+		text-align:center;
+	}
+	.social img{
+		width: 35px;
+	}
+	/*Footer End*/
+}
+  @media only screen and (min-width: 521px){
+	/*Navigation Bar Start*/
+		/*position and size of navigation bar*/
+		nav{
+			position: absolute;
+			margin: 0px 250px;
+			width: 1000px;
+		}
+		/*position and style of unordered list */
+		ul {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		/*position and design of list */
+		nav ul li{
+			float:left;
+			width: 160px;
+			height: 40px;
+			background-color: #FFE02B;
+			line-height: 40px;
+			text-align: center;
+		}
+
+		/*color and decoration of navigation text*/
+		.nav_main a {
+				color: #000000;
+				font-size: 15px;
+				font-weight: bold;
+				text-decoration: none;
+		}
+		/*color change of navigation text when hovered*/
+		.nav_main a:hover {
+				color:#FFFFFF;
+		}
+  /*Navigation Bar End*/
+	/*Homepage Start*/
+		#logo{
+			margin: 180px 250px;
+			width: 350px;
+		}
+		#line {
+			position: absolute;
+			border-left: 15px
+			solid #000000;
+		  height: 350px;
+			margin-top: -430px;
+			margin-left: 670px;
+		}
+		#welcome{
+			width: 500px;
+			margin-left: 780px;
+			margin-top: -360px;
+			font-size: 35px;
+		}
+	/*Homepage End*/
+	/*About Us Start*/
+		#aboutUs{
+			width: 450px;
+			margin: 50px 200px;
+		}
+		#aboutUs h1{
+			font-size: 24px;
+		}
+		#aboutUs p{
+			font-size: 16px;
+		}
+		#hline{
+			margin-top: 160px;
+		}
+		#hline2{
+			margin-top: 380px;
+		}
+		/*image silder start*/
+			.slider{
+				width:300px;
+				margin: -330px 750px;
+			}
+			.slider-inner{
+				width:465px;
+				height:300px;
+				padding:3px;
+			}
+			.slider-inner img{
+				display:none;
+				width:450px;
+				height:300px;
+			}
+			.slider-inner img.active{
+				display:inline-block;
+			}
+			.prev,.next{
+				float:left;
+				margin-top:130px;
+				cursor: pointer;
+			}
+			.prev{
+				position:relative;
+				margin-right:-45px;
+			}
+			.next{
+				position:relative;
+				margin:-175px 412px;
+			}
+		/*image silder end*/
+	/*About Us End*/
+	/*Classes Start*/
+		#classes{
+			margin-left: 200px;
+			margin-top: 25px;
+		}
+		#kids{
+			margin: 20px 50px 20px 200px;
+		}
+		#begiInter{
+			margin: -340px -20px 20px 550px;
+		}
+		#advan{
+			margin: -338px 50px 20px 900px;
+		}
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			width: 300px;
+		}
+		.container {
+			padding: 5px 16px;
+			background-color: #FFE02B;
+		}
+		#hline3{
+			margin-top: 50px;
+		}
+	/*Classes End*/
+  /*TimeTable Start*/
+    #time{
+      margin-left: 200px;
+      margin-top: 25px;
+    }
+    #timetable2{
+      display:none;
+    }
+    table{
+    	font-family: Helvetica;
+    	width: 1000px;
+    	table-layout: fixed;
+    	text-align: center;
+    	margin:10px 200px;
+    	margin-bottom: 50px;
+    	color: #000000;
+    }
+    table th,td{
+      border: 1px dotted #000000;
+      border-collapse: collapse;
+      padding: 20px;
+      font-size: 14px;
+    }
+    th{
+      background-color: #808080;
+    }
+    td:nth-child(6n+1){
+      background-color: #808080;
+    }
+		#hline4{
+			margin-top: 20px;
+		}
+  /*TimeTable End*/
+	/*Contact Start*/
+		#contact{
+			margin-left:200px;
+			margin-top: 30px;
+		}
+	/*Contact End*/
+	/*Map Start*/
+		#map{
+			margin:-160px 0px 30px 700px;
+			height:300px;
+			width:500px;
+		}
+	/*Map End*/
+	/*Footer Start*/
+	footer{
+	  background-color: #292c2f;
+	  box-sizing: border-box;
+	  width: 100%;
+	  padding: 35px 50px;
+	}
+	.detail{
+	  color: #808080;
+		width: 700px;
+	  font-size: 14px;
+	  margin-left:150px;
+	}
+	.social{
+		margin-left:1050px;
+		margin-top:-40px;
+		width: 100px;
+	}
+	.social img{
+		width: 35px;
+	}
+	/*Footer End*/
+}
