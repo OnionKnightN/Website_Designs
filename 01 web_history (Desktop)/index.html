@@ -1,0 +1,182 @@
+<!--Always at the start of every html.it is a declaratn that this document is HTML5-->
+<!DOCTYPE html>
+<!--Used to indicate the start of the html.this is also the root element
+that holds the elements inside.It also has a lang attribute to indicate
+what language to use. It is importent to note that any element or tag must
+have a closing tag-->
+<html lang = "en">
+  <!--The head contains all head elements which includes titles,scripts,
+  styles, meta information and more.it is the first element of an html document-->
+  <head>
+    <!-- This meta tag is used to specify a character set written on website
+    This meta uses UTF-8 character encoding-->
+    <meta charset="utf-8"/>
+    <!--The title is used to define the title(name) of the page document-->
+    <title>How The Web Works</title>
+    <!--viewport for different devices-->
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <!--Below i have commented out the reset.css from html-->
+    <!--link rel="stylesheet" href="css/reset.css">-->
+    <!--Links CSS to the HTML5-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Link from google to provide Roboto font into the HTML5-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <!--The head element must be closed -->
+  </head>
+  <!--The body contains all of the visible content of a web page containing
+  other tags.It is what the user would see in there browser-->
+  <body>
+    <!--Header element used for navigation bar and main home page images -->
+    <header>
+      <!--Div element to contain an home logo image with a class called home_logo-->
+      <div class ="home_logo"><a href="index.html"><img src="img/Logo_transperate.png" alt= "home logo"></a></div>
+      <!--Nav tag with an id called nav_main used as the main navigational links-->
+      <nav id="nav_main">
+        <!--Created an unorganised list for links in within the website-->
+        <ul>
+          <!--List of of links to other pages within the website with there name-->
+          <li><a href="index.html">How The Web Works</a></li>
+          <li><a href="about.html">Hoai Nhan Nguyen(2989969)</a></li>
+          <li><a href="bibliography.html">Bibliography and Reference</a></li>
+        <!-- Closing ul tag with a a horzontal line after navigation bar-->
+        </ul><hr>
+      <!--closing the nav tag-->
+      </nav>
+      <!--div element to contain the home page image with a class name home_page-->
+      <div class ="home_page"><img src="img/home_page.jpg" alt= "apple computer"></div>
+      <!--div element to containing the start button image with a class name home start_button this with bring you to the report on the same page-->
+      <div class ="start_button"><a href="#nav_article"><img src="img/start_button.png" alt= "start_button"></a></div>
+      <!--Another navigation bar to link you to the main headings of the article-->
+      <nav id="nav_article">
+      <!--provided a horizontal line and line break within the nav tag -->
+      <hr><br>
+        <!--Created an unorganised list for links of the headings of the report-->
+        <ul>
+          <!--List of the links and headings.-->
+          <li><a href="#internet">The Internet</a><br/></li>
+          <li><a href="#web">History of the Web</a><br/></li>
+          <li><a href="#delivery">How Web Pages Are Delivered</a><br/></li>
+          <li><a href="#html_css">HTML-CSS</a><br /></li>
+          <li><a href="#future">The Future of the Web</a><br/></li>
+        <!--Closing the unorganised list tag-->
+        </ul>
+      <!--Provided a horizontal line and line break within the nav tag -->
+      <br><hr>
+      <!--Closing the nav tag-->
+      </nav>
+    <!--Closing the head tag-->
+    </header>
+    <!--largest heading tag with an id name report.This will hold the main information of the report -->
+    <section class="report">
+    <!--largest heading tag with an id name intro-->
+    <h1 id="intro">Introduction</h1>
+    <!--using a p tag to create paragraph-->
+    <p>There is a complexity in web architecture and technology.There are many different components that perform simultaneously to allow the web to function in our society.
+      I have divided this report into five different sections to understand the development and the functionality of how the web works. These sections involve, the internet,
+      history of the web, how web pages are delivered, HTML-CSS and the future of the web.</p>
+    <!--largest heading tag with an id name internet-->
+    <h1 id="internet">The Internet</h1>
+    <!--Using a p tag to create paragraph-->
+    <p>The majority of us have used the internet in some shape of form and we tend not to question its existences. Society has taken advantage of this technology providing
+      us a new form of functionality in our lives. The internet is a group of computer networks communicating with each other through digital signals with defined protocols.
+      We currently use this technology for social communication, entertainment, business, academic research and a way to bring us to the digital world. For us to grasp the
+      internet’s possibilities we must understand its building blocks and intention of its creation.</p>
+    <!--Using a p tag to create paragraph.It has an img tag inside with a class name network.This will be used later on for its position.It also has a q tag and sup tag to indicate a reference from the report-->
+    <p><img src="img/packet_switching_network.jpg" alt= "packet swtching network" Title= "Figure of data is passed through the internet using packet switching" class = "network"/>
+      In the 1969 the first computer network created was ARPANET. It was created for academic research using four university computers. It was used exclusively to share
+      digital information and resources to academic scholars. The method of communication that were using was based on a packet switching network. It would split <q>messages
+      into smaller chunks called packets and routes them to the appropriate place based on the destination address</q><sup>1</sup>. This allowed information to be sent across multiple
+      pathways. </p>
+    <!--Using a p tag to create paragraph.It also has a q tag and sup tag to indicate a reference from the report-->
+    <p>The network research started to grow and connected into branches of university campuses and research institutions in the United States. During this period other
+      alternative networks were also created such as X.25, USENET, NPL and CYCLADES. As more networks started to appear, there was difficulty in these various networks
+      to communicate with each other. This major problem was solved by implementing <q>a suite of protocols</q><sup>2</sup> to unify the networks adopting the TCP/IP model. This expanded
+      the connections between networks providing text base internet experience to be sent around world. Further improvements were made by Tim Berners-Lee and Robert Cailliau
+      who introduced the World Wide Web changing the experience of the internet.</p>
+    <!--largest heading tag with an id name web-->
+    <h1 id="web">History of the Web (World Wide Web)</h1>
+    <!--Using a p tag to create paragraph-->
+    <p>The web also known as the World Wide Web. It commonly misunderstood as the internet.The web is a subset application that provides informational mediums through the internet.
+      It was developed when a computer scientist named Tim Berners-Lee noticed the difficulty in sharing information between different computers. Each computer had its own unique program
+      which needed to be learnt to communicate. Tim Berners-Lee and Robert Cailliau provided a solution to this problem. The idea was to have universal space in the internet in which
+      we could use.</p>
+    <!--Using a p tag to create paragraph.It has an img tag inside with a class name web.This will be used later on for its position. A cite tag is also used to indicate a document report-->
+    <p><img src="img/the_internet.jpg" alt= "internet" Title= "Figure of the internet and subset applications" class ="web"/>Tim Berners-Lee was working in CERN and had vision of a
+      new application on the internet to manage digital information. He published a document called <cite>Information Management: A Proposal</cite> in 1989 which laid out the foundation of the application (the web). It propose new fundamental technology that computers could use to communicate using a universal language. It used
+      Uniform Resource Locator (URL) and hypertext system (HTTP and HTML) to function. Robert Cailliau provided the proposal of a hypertext system with Tim Berners-Lee.</p>
+    <!--Using a p tag to create paragraphs-->
+    <p>As the foundation of the web developed, Tim, Robert and others realised the true potential of the application and advocated to share this technology to the public.
+      In 1993 a declaration by CERN's directors provided this technology to the public royalty free. This changed the dynamics of the world and provided growth in innovation in the internet.
+      This led to the creation to Netscape Navigator which was most popular web browser in its period for public use. Due to the massive growth of the web Tim started to work in MIT and founded
+      the World Wide Web Consortium (W3C) to develop an international standard for the web. This provided new business opportunities to be on the internet which started the Dot-com bubble in 1995 to 2001.
+      There were many start-up companies created during this period and only a few manage to survive becoming giant tech corporations such as Amazon, Google and eBay.</p>
+    <!--largest heading tag with an id name delivery-->
+    <h1 id=delivery>How Web Pages Are Delivered(Servers/Browsers/DNS)</h1>
+    <!--Using a p tag to create paragraph.It also has a q tag and sup tag to indicate a reference from the report-->
+    <p>From the development of the internet and the web our perception of digital information has changed dramatically. Web pages (Websites) played an impotent role on the development of how our society
+      communicates and functions. As a web developer it is important for us to understand how they are delivered. Internet Protocols are used as a set of rules of how information is passed through the internet.
+      They would <q>work behind the scenes for web developers</q><sup>3</sup> traveling data based on the TCP/IP network modal. This allows digital information to pass through Web Servers, Web Browsers and Domain Name System’s
+      that are involved in the delivery of websites.</p>
+    <!--3rd largest heading tag for sub headings-->
+    <h3>Web Servers</h3>
+    <!--Using a p tag to create paragraph.It has a q tag and sup tag to indicate a reference from the report.It also has an img tag inside with a class name web.-->
+    <p><img src="img/different_servers.jpg" alt= "servers" Title= "Figure of variation of computer servers" class ="server"/>A web server is a dedicated computer that is continuously active. It stores data information
+      of a website so people could visit them on a web browser. The web server would listen to queries, receives requests
+      and response back to client with the web page. Web servers communicate with multiple devices exchanging information simultaneously. There is a high demand on web servers. This issue is usually resolved by using
+      a server farm strategy. This strategy would distribute incoming requests to multiple servers to prevent excessive overload of requests. Server farm would have multiple servers using a load balancer device to
+      <q>split the functionality of a website</q><sup>4</sup>.These servers are split into application servers, data servers, mail servers, media servers and authentication servers.</p>
+    <!--3rd largest heading tag for sub headings-->
+    <h3>Web browsers</h3>
+    <!--using a p tag to create paragraph-->
+    <p>We use the web browser every day to access multiple web pages on the internet. It is a software program that displays readable content to the public by translating programming languages written by web developers.
+      Depending on your operating systems a different web browsers would be used providing a particular feature and design. The most known web browsers are Google Chrome, Firefox, Safari, Opera and Internet Explorer.</p>
+    <!--3rd largest heading tag for sub headings-->
+    <h3>Domain Name System</h3>
+    <!--Using a p tag to create paragraph.It also has an img tag inside with a class name network.This will be used later on for its position-->
+    <p><img src="img/domain_name_server.jpg" alt= "domain name server" Title= "Figure of how a computer interacts with a domain name server" class = "domain"/>When using web servers and web browser we need to know its
+      location to access data of a web page. This is usually achieve through locating its IP address on the internet. The IP address would be composed of binary or hexadecimal digits.It would be time consuming and difficult to
+      remember all IP address for a website. So domain names were introduced. A Domain Name System (DNS) was developed to distribute these websites more efficiently
+      translate IP address into domain names and vice versa.</p>
+    <!--3rd largest heading tag for sub headings-->
+    <h1 id=html_css>HTML-CSS</h1>
+    <!--using a p tag to create paragraph.-->
+    <p>HTML and CSS are the foundation of every website. HTML deals with the written text structure and CSS deals with the visual layout of a web page. It is not necessary to use high-level programming languages such as JavaScript,
+      PHP and Python but it is essential for every web page to have HTML and CSS.</p>
+    <!--Using a p tag to create paragraph.It has an img tag inside with a class name network.This will be used later on for its position.It also has a q tag and sup tag to indicate a reference from the report. I am also using an abbr tag to show the abbreviation of W3C-->
+    <p><img src="img/html5.jpg" alt= "HTML5" Title= "Figure of a diagram of HTML5 support" class = "html"/>HTML was developed as a baseline standard for written text on web pages. The World Wide Web Consortium are the key players
+      on its development. At the beginning poorly written HTML were written for web pages which caused major problems.Developed web browsers were able to <q>handle sloppy HTML</q><sup>5</sup>  which caused unpredictable responses of web pages.
+      XHTML and validators was introduce to provide a stricter syntax to solve this issue. As XHTML was not backwards compatibility,websites needed to update their code. During this period HTML5 was being developed and had a different approach.
+      It focused less on the purity of semantics and aimed to be integrated with the exiting web. It has been recommended by <abbr title="World Wide Web Consortium">W3C</abbr> that all current websites are developed using HTML5. As there was importance
+      of HTML, CSS was used to manipulate its text.</p>
+    <!--Using a p tag to create paragraph.It has a q tag and sup tag to indicate a reference from the report.-->
+    <p>CSS is used to <q>modify the visual presentation</q><sup>6</sup> of HTML on web pages. The World Wide Web Consortium have provided recommended guidelines of using this programming language in adaption with HTML. It is best practice that HTML is not used
+      for formatting and styling a web page. Cascading Style Sheets (CSS) should be used instead. The benefit of using CSS on the appearance of HTML is allow control over formatting, site maintainability, accessibility, page download speed and
+      the flexibility of the output. CSS would have a separate file that interacts directly with HTML. This allows CSS to manipulate the font, colours, sizes, background images and position of elements of HTML. The current recommend version for CSS is
+      CSS3.</p>
+    <!--largest heading tag with an id name future-->
+    <h1 id="future">The Future of the Web</h1>
+    <!--Using a p tag to create paragraph.It also has a q tag and sup tag to indicate a reference from the report-->
+    <p>The Web 2.0 is the current phase of web applications. It is based on dynamic websites that is more driven to the user’s web experience. It involves the user that <q>could contribute and consume web content</q><sup>6</sup>. An example of these dynamic websites
+      would be Facebook, YouTube and Instagram. Web developers started to integrate high-level programming languages into their websites. Job positions have also been divide into Front-End, Backend and Full Stack development due to its complexity.
+      There are currently many different trends that are involved in Web 2.0 and we are still questioning its transitions into the Web 3.0.</p>
+    <!--using a p tag to create paragraph-->
+    <p>Predicting the future for the Web 3.0 is a difficult task and some believe that we have already reached it with the development of the internet of things, the integration of artificial intelligence, semantic webs, virtual web or block chain websites.
+      These current predictions of the development of Web 3.0 could be all true with its own trajectory into the future. Determining the next phase of the web and internet, there will be a need of a universal approval towards its functionality in our society.</p><br>
+    <!--Using a p tag to make another paragraph with a link tag to bring you back to the top of the page-->
+    <p><a href=index.html>Back To Top Page</a></p><br>
+    <!--Closing the section tag-->
+    </section>
+    <!--Used the footer element providing information about my name course and email.This is used on each page-->
+    <footer>
+      <!--used a horzontal line within the footer-->
+      <hr>
+      <!--Made a paragraph for each informational text of my name, module and email-->
+      <p>Student:Hoai Nhan Nguyen(2989969)</p>
+      <p>Module:Web Development and UI Design</p>
+      <p>Email:<a href="hoainhan14@gmail.com">hoainhan14@gmail.com</a></p>
+    <!--Closing the footer-->
+    </footer>
+  <!--Closing the body tag-->
+  </body>
+<!--Closing the html tag.-->
+</html>

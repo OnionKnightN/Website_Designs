@@ -1,0 +1,90 @@
+<!--Always at the start of every html.it is a declaratn that this document is HTML5-->
+<!DOCTYPE html>
+<!--Used to indicate the start of the html.this is also the root element
+that holds the elements inside.It also has a lang attribute to indicate
+what language to use. It is importent to note that any element or tag must
+have a closing tag-->
+<html lang = "en">
+  <!--The head contains all head elements which includes titles,scripts,
+  styles, meta information and more.it is the first element of an html document-->
+  <head>
+    <!-- This meta tag is used to specify a character set written on website
+    This meta uses UTF-8 character encoding-->
+    <meta charset="utf-8"/>
+    <!--The title is used to define the title(name) of the page document-->
+    <title>About Me</title>
+    <!--Below i have commented out the reset.css from html-->
+    <!--link rel="stylesheet" href="css/reset.css">-->
+    <!--Links CSS to the HTML5-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Link from google to provide Roboto font into the HTML5-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <!--The head element must be closed -->
+  </head>
+  <!--The body contains all of the visible content of a web page containing
+  other tags.It is what the user would see in there browser-->
+  <body>
+    <!--Header element used for navigation bar and main home page images -->
+    <header>
+        <!--Div element to contain an home logo image with a class called home_logo-->
+        <div class ="home_logo"><a href="index.html"><img src="img/Logo_transperate.png" alt= "home logo"></a></div>
+        <!--Nav tag with an id called nav_main used as the main navigational links-->
+        <nav id ="nav_main">
+          <!--Created an unorganised list for links in within the website-->
+          <ul>
+            <!--List of of links to other pages within the website with there name-->
+            <li><a href="index.html">How The Web Works</a></li>
+            <li><a href="about.html">Hoai Nhan Nguyen(2989969)</a></li>
+            <li><a href="bibliography.html">Bibliography and Reference</a></li>
+          <!-- Closing ul tag with a a horzontal line after navigation bar-->
+          </ul><hr>
+        <!--closing the nav tag-->
+        </nav>
+    <!--Closing the head tag-->
+    </header>
+    <!--largest heading tag with an id name about.This will hold the main information of about me page -->
+    <section class = "about">
+    <!--largest heading tag h1 is used for Introduction-->
+    <h1>Introduction</h1>
+    <!--Using a p tag to create paragraph.It has an img tag inside with a class name web.This will be used later on for its position.-->
+    <p><img src="img/about_me.jpg" alt= "nhan Nguyen" Title= "Picture of me drinking beer" class ="me"/>My name is Hoai Nhan Nguyen and I am a first generation Vietnamese born Irish. My parents were the first Vietnamese refugees to come to Ireland in 1979. You may wonder
+      why my parents would move to an unknown country at the far edge of Europe. The simple answer would be Ireland’s neutrality declaration and the natural green environment.
+      It was based on the simplicity of recreating a new life. Since the beginning I have been living in both Irish and Vietnamese culture. It provided me a new perspective of
+      how the world works and the similarities between cultures. Ireland is where my journey begins. Below are my experience and exploration architecture, music and web development
+      that shape the person who I am today.</p>
+    <!--largest heading tag h1 is used for Architecture, Music and Web Development-->
+    <h1>Architecture, Music and Web Development</h1>
+    <!--using a p tag to create paragraph-->
+    <p>Architecture has played a major role in my life, providing me a new skillset in design, communication and laterally thinking. I have recently achieved my bachelor’s degree
+      in architectural studies in DIT in 2017.The reason why I have studied this course is due to its creative process and execution towards new concepts. I was intrigued by the though
+      process in Architecture. I would spend majority of time designing spaces, solving problems and communicating new concepts with my follow class mates.Now that I have completed this
+      course my aim was to continue to learn and solve problems. I knew that there was more opportunities in this world for me to explore. My plan is shiftwhat I have learnt in Architecture
+      and apply it to web development.</p>
+    <!--Using a p tag to create paragraph.It has an img tag inside with a class name web.This will be used later on for its position.-->
+    <p><img src="img/web_development.jpg" alt= "web development" Title= "Figure of a laptop showing programming languages for web development" class ="laptop"/>During my years in Architecture school my main income source was through music with my band Saviyen. With them I had the opportunity to perform in many different gigs and events in Dublin.
+      We would combine an array of musical genres to create a modern style approach towards music. My main instrument in the band would be the guitar which I have been crafting for nearly 9 years.
+      I would use a percussive technique to produce a unique harmony of notes.I use music to communicate to a variety of different people. As I was learning to write music, I would surround myself with different musicians to learn and listen to their experience. I was
+      able to conceptual musical notes and know how to put them together. Now that I’m learning new programming languages there is some layer of similarity towards there structure. I like to believe
+      that music has played a role towards my understanding of programming. I would see code as a musical connections between notes.</p>
+    <!--using a p tag to create paragraph-->
+    <p>I have always been interested in technology from a very young age. I had a tendency to come up with new ideas with technology for our society. I understood my ideas were just conceptual and there
+      was a need for me understand programming to execute it. I have been learning python, networking and Linux operating independently since my completion of my bachelor degree. I would use online resources
+      such as Udacity, Udemy and Codecademy. I knew that it wasn’t enough so decided to study web development in Griffith College. I needed some form of structure and environment to meet others who are
+      interested in computer science. I am currently studying in Griffith College to become a web developer. The goal is to combine all of my experience and skills to create something universal for this
+      world through technology.</p><br>
+    <!--Closing the section tag-->
+    </section>
+    <!--Used the footer element providing information about my name course and email.This is used on each page-->
+    <footer>
+      <!--used a horzontal line within the footer-->
+      <hr>
+      <!--Made a paragraph for each informational text of my name, module and email-->
+      <p>Student:Hoai Nhan Nguyen(2989969)</p>
+      <p>Module:Web Development and UI Design</p>
+      <p>Email:<a href="hoainhan14@gmail.com">hoainhan14@gmail.com</a></p>
+    <!--Closing the footer-->
+    </footer>
+  <!--Closing the body tag-->
+  </body>
+<!--Closing the html tag.-->
+</html>

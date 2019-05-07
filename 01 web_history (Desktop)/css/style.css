@@ -1,0 +1,139 @@
+body {
+  width: 1350px;
+  margin:0 auto;
+}
+/*Below I am targeting and manipulation the text and images based on the classes and IDs from the HTML files */
+.home_logo img{
+          position:absolute;
+          height:45px;
+          margin-top: -12px;
+          margin-left:1px;
+}
+/*Transformed the homepage image bigger using its width*/
+.home_page img{
+          width:1350px
+}
+/*Made the start button independent using position:absolute.I used margin to move the start buttom image */
+.start_button img{
+          position:absolute;
+          height:70px;
+          margin:-520px 800px;
+}
+/* I have changed the list to a block and moved its posiition using margin-left*/
+#nav_main ul{
+          display:block;
+          margin-left: 650px;
+}
+/*I took the list style out and displayed it as an inline block */
+#nav_main li{
+          list-style-type:none;
+          display: inline-block;
+}
+/*shows underline texted once hovered on link*/
+#nav_main a:hover{
+          text-decoration:underline;
+}
+/*Targeting main text of link.Manipulated the font,size and color*/
+#nav_main a{
+          font-family: 'Roboto Condensed', sans-serif;
+          width:100px;
+          padding:30px 10px;
+          text-decoration:none;
+          color:#000000;
+}
+/* I have changed the list to a block and moved its posiition to the cente using text-align*/
+#nav_article ul{
+          display:block;
+          text-align: center;
+}
+/*I took the list style out and displayed it as an inline block */
+#nav_article li{
+          list-style-type:none;
+          display:inline-block;
+}
+/*shows underline texted once hovered on link*/
+#nav_article a:hover{
+          text-decoration:underline;
+}
+/*Targeting main text of link.Manipulated the font,size and color*/
+#nav_article a{
+          font-family: 'Roboto Condensed', sans-serif;
+          width:100px;
+          padding:20px 50px;
+          text-decoration:none;
+          color:#000000;
+}
+/*Targeting the report class to manipulate font style,font size,its postion and width*/
+.report{
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size:150%;
+          width: 1100px;
+          margin:0 auto;
+}
+/* Changing the position of the image using float with margin*/
+img.network{
+          float:right;
+          margin-right:20px;
+}
+/* Changing the position of the image using float with margin*/
+img.web{
+          float:right;
+          margin-right:20px;
+}
+/*Changing the position of the image using float with margin and changing size with height*/
+img.server{
+          float:right;
+          height:320px;
+          margin-top:20px;
+          margin-right:20px;
+}
+/*Changing the position of the image using float with margin and changing size with height*/
+img.domain{
+          float:right;
+          height:320px;
+          margin-right:20px;
+          margin-top:-30px;
+}
+/* Changing the position of the image using float with margin*/
+img.html{
+          float:right;
+          margin-right:20px;
+}
+/*Targeting the about class to manipulate font style,font size,its postion and width*/
+.about{
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size:150%;
+          width: 1100px;
+          margin:0 auto;
+}
+/*Changing the position of the image using float with margin and changing size with height*/
+img.me{
+          float:left;
+          height:230px;
+          width:150px;
+          margin-right:20px;
+}
+/*Changing the position of the image using float with margin and changing size with height*/
+img.laptop{
+          float:right;
+          height:350px;
+          margin-right:20px;
+}
+/*Targeting the reference class to manipulate font style,font size,its postion and width*/
+.reference{
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size:150%;
+          width: 1100px;
+          margin:0 auto;
+}
+/*Targeting all a tags to get ride of all list styles and changed color to black */
+a{
+          list-style-type:none;
+          color:#000000;
+}
+/* Targeting the footer to change the font style, font size and aligning the text to the left*/
+footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:120%;
+    text-align: right;
+}
